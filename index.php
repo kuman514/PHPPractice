@@ -27,7 +27,7 @@
 
   function printContent() {
     if (isset($_GET['id'])) {
-      if (file_exists($_GET['id'])) {
+      if (file_exists('data\\'.$_GET['id'])) {
         echo file_get_contents('data\\'.$_GET['id']);
       } else {
         echo 'File not found';
