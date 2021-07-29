@@ -1,0 +1,13 @@
+.delete-button {
+  all: unset;
+  color: blue;
+  text-decoration-line: underline;
+}
+
+.delete-button:visited {
+  color: purple;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
