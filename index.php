@@ -44,6 +44,7 @@
         printList();
       ?>
     </ul>
+    <a href="create.php">CREATE</a>
     <h2>
       <?php
         printTitle();
