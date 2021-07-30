@@ -1,6 +1,6 @@
 <?php
   function printWindowTitle() {
-    if (isset($_GET['id'])) {
+    if (isset($_GET['id']) && strcmp($_GET['id'], basename($_GET['id'])) == 0) {
       echo htmlspecialchars($_GET['id'].' :: kuman514 memo app');
     } else {
       echo 'kuman514 memo app';
@@ -8,7 +8,7 @@
   }
 
   function printTitle() {
-    if (isset($_GET['id'])) {
+    if (isset($_GET['id']) && strcmp($_GET['id'], basename($_GET['id'])) == 0) {
       echo htmlspecialchars($_GET['id']);
     } else {
       echo 'Welcome';
@@ -27,7 +27,7 @@
   }
 
   function printContent() {
-    if (isset($_GET['id'])) {
+    if (isset($_GET['id']) && strcmp($_GET['id'], basename($_GET['id'])) == 0) {
       if (file_exists('data\\'.$_GET['id'])) {
         echo htmlspecialchars(file_get_contents('data\\'.$_GET['id']));
       } else {
