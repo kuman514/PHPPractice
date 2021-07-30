@@ -1,29 +1,5 @@
 <?php
-  function printWindowTitle() {
-    if (isset($_GET['id'])) {
-      echo 'Modify '.$_GET['id'].' :: kuman514 memo app';
-    } else {
-      echo 'kuman514 memo app';
-    }
-  }
-
-  function printTitle() {
-    if (isset($_GET['id'])) {
-      echo $_GET['id'];
-    } else {
-      echo 'Welcome';
-    }
-  }
-
-  function printContent() {
-    if (isset($_GET['id'])) {
-      if ('data\\'.file_exists($_GET['id'])) {
-        echo file_get_contents('data\\'.$_GET['id']);
-      } else {
-        echo 'File not found';
-      }
-    }
-  }
+  require_once('lib\\print.php');
 ?>
 <!doctype html>
 <html>
