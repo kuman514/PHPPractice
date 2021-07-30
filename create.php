@@ -12,5 +12,6 @@
       <p><textarea name="description" placeholder="Description"></textarea></p>
       <p><input type="submit"></p>
     </form>
-  </body>
-</html>
+<?php
+  require_once('view\\bottom.php');
+?>
